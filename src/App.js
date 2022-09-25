@@ -1,11 +1,15 @@
-import React from "react";
-import "./style.css";
-
-export default function App() {
+import React, { Fragment } from 'react';
+import InputTodo from './components/InputTodo';
+import ListTodo from './components/ListTodo';
+const App = () => {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <Fragment>
+      <div className="container">
+        <InputTodo />
+        <ListTodo />
+      </div>
+    </Fragment>
   );
-}
+};
+
+export default App;
